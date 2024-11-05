@@ -1,0 +1,32 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Itim&family=Joti+One&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    /* deklaracja zmiennych pod kolory */
+    --primary-100: #caf0f8;
+    --primary-200: #ade8f4;
+    --primary-300: #90e0ef;
+    --primary-400: #48cae4;
+    --primary-500: #00b4d8;
+    --primary-600: #0096c7;
+    --primary-700: #0077b6;
+    --primary-800: #023e8a;
+    --primary-900: #03045e;
+    --fontColor: var(--primary-900);
+    --backgroundColor: var(--primary-100);
+    --bodyFont: "Oswald", serif;
+    --headerFont: "Itim", serif;
+    --specialFont: "Joti One", serif;
+}
+
+
+body {
+    color: var(--fontColor);
+    background-color: var(--backgroundColor);
+    font-family: var(--bodyFont);
+}
+
+h1, h2, h3, h4, h5
+{
+    font-family: var(--headerFont);
+}
+

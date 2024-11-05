@@ -18,6 +18,11 @@ namespace ProjektPortfolio_wt15.Controllers
 			return View();
 		}
 
+		public IActionResult StaticSites(string name)
+		{
+			return View(name);
+		}
+
 		public IActionResult Privacy()
 		{
 			return View();

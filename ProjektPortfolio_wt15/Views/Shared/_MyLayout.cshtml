@@ -1,0 +1,36 @@
+﻿
+<html>
+<head>
+	<link href="~/css/portfolio.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+	<nav class="navbar">
+		<div class="nav-center">
+			<div class="nav-header">
+				<a asp-controller="Home" asp-action="StaticSites" asp-route-name="Index">
+					<img src="~/assets/keyboard-254582_1280.jpg" width="100px" />
+				</a>
+				<button type="button" class="nav-btn btn">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+
+			</div>
+			<div class="nav-links">
+				<a class="nav-link" asp-controller="Home" asp-action="StaticSites" asp-route-name="Index">O mnie</a>
+				<a class="nav-link" asp-controller="Home" asp-action="StaticSites" asp-route-name="Index">Curriculum Vitae</a>
+				<a class="nav-link" asp-controller="Home" asp-action="StaticSites" asp-route-name="Index">Projekty</a>
+				<div class="nav-link contact-link">
+					<a class="btn" asp-controller="Home" asp-action="StaticSites" asp-route-name="Index">Kontakt</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+
+	<i style="color: red; font-size: 30px;" class="fa-solid fa-stop"></i>
+	@RenderBody()
+</body>
+</html>
