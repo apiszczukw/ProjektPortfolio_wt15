@@ -29,6 +29,11 @@ body {
 h1, h2, h3, h4, h5
 {
     font-family: var(--headerFont);
+    margin: 0;
+}
+
+p {
+    margin: 0;
 }
 
 .navbar 
@@ -84,6 +89,9 @@ h1, h2, h3, h4, h5
 
     height: 0;
     overflow:hidden;
+
+    transition-duration: 1s;
+    transition-timing-function: linear;
 }
 
 .nav-link
@@ -106,5 +114,61 @@ a {
 
 .show-links
 {
-    height: auto;
+    height: 342px;
+}
+
+@media screen and (min-width: 700px)
+{
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-links {
+        height: auto;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .nav-center {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-link {
+        border: none;
+        margin-right: 1rem;
+        padding: 0;
+    }
+
+    .nav-header {
+        margin-right: 2rem;
+    }
+
+    .contact-link {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .nav-center {
+        max-width: 1280px;
+    }
+}
+
+
+.main-page {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1280px;
+    height: calc(100vh - 5rem - 3.5rem);
+}
+
+.footer-page {
+    height: 3.5rem;
+    background-color: var(--primary-800);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-family: var(--headerFont);
 }
